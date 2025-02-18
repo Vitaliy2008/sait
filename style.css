@@ -27,8 +27,6 @@ body {
         border: 1px solid rgba(44, 44, 44, 0.111);/*рамка*/
     }
 
-    
-
     .details {/*при раскрытом списке*/
         position: relative;/*положение*/
         display: block;/*блокировки при приближении сайта*/
