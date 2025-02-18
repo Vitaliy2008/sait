@@ -15,16 +15,16 @@ body {
 
     .content-box{ /*полупрозрачный блок*/
         padding: 50px; /*размер до грани*/
-        color: #fff;/*цвет*/
+        color: #ffffff00;/*цвет*/
         font-size: 36px;/*размер*/
         text-transform: uppercase;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background: rgba(255, 255, 255, 0,2);/*цвет и прозрасность рамки*/
+        background: rgba(118, 114, 114, 0.133);/*цвет и прозрасность рамки*/
         border-radius: 16px;/*рамка*/
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0,1);/*степень размытия*/
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0,5);/*степень размытия*/
         backdrop-filter: blur(10px);/*затемнение*/
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0,3);/*рамка*/
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(44, 44, 44, 0.111);/*рамка*/
     }
 
     
@@ -35,7 +35,7 @@ body {
         max-width: 650px;/*максимальная ширина при открытии*/
         max-height: 500px;/*максимальная высота при открытии*/
         margin: 0 auto 10px;/*сдвиг*/
-        background: rgba(255, 255, 255, 0.251);/*фон*/
+        background: rgba(255, 255, 255, 0.336);/*фон*/
         border-radius: 5px;/*рамка*/
         transition: 0.7s;/*задержка*/
         overflow: hidden;
