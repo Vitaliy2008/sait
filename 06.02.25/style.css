@@ -1,0 +1,5 @@
+.image-container {
+    background-image: src("mesh-253.png");
+    width: 600px;
+    height: 400px;
+  }
