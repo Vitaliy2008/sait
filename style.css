@@ -4,43 +4,80 @@ body {
     }
 
     section {
-        display: flex;/*блокировка картинки по отношению к сайту*/
-        justify-content: center;/*всегда по центру*/
-        align-items: center; /*положение картинки*/
-        height: 100vh;/*высота*/
-        background-image: url(fon.jpg); /*определение картинки*/
+        display: flex;/*блокировка ширины блока*/
+        justify-content: center;/*всегда по центру (по вертикали)*/
+        align-items: center; /*высота блока*/
+        height: 100vh;/*высота картинки*/
+        background-image: url(fon3.jpg); /*определение картинки*/
         background-repeat: no-repeat; /*повторение картинки*/
-        background-size: cover; /*размер картинки*/
+        background-size: cover; /*будет каартинка увеличиваться прри масштабировании сайта, или нет*/
+        flex-direction: column;
     }
 
     .content-box{ /*полупрозрачный блок*/
-        padding: 50px; /*размер до грани*/
-        color: #ffffff00;/*цвет*/
-        font-size: 36px;/*размер*/
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 50px; /*размер до края блока*/
+        color: #ffffff00;/*цвет треугольников*/
+        font-size: 36px;/*размер всег блока*/
+        text-transform: uppercase;/*все буквы заглавные*/
+        font-family: Verdana, Tahoma, sans-serif;/*шрифт*/
         background: rgba(118, 114, 114, 0.133);/*цвет и прозрасность рамки*/
-        border-radius: 16px;/*рамка*/
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0,5);/*степень размытия*/
-        backdrop-filter: blur(10px);/*затемнение*/
-        -webkit-backdrop-filter: blur(15px);
-        border: 1px solid rgba(44, 44, 44, 0.111);/*рамка*/
+        border-radius: 16px;/*закругление крраев рамки*/
+        backdrop-filter: blur(10px);/*степень размытия*/
+        border: 3px solid rgba(234, 230, 230, 0.261);/*рамка*/
     }
 
     .details {/*при раскрытом списке*/
         position: relative;/*положение*/
-        display: block;/*блокировки при приближении сайта*/
+        display: block;/*блокировки*/
         max-width: 650px;/*максимальная ширина при открытии*/
         max-height: 500px;/*максимальная высота при открытии*/
-        margin: 0 auto 10px;/*сдвиг*/
-        background: rgba(255, 255, 255, 0.336);/*фон*/
-        border-radius: 5px;/*рамка*/
+        margin: 0 auto 10px;/*расстояние между элементами списка*/
+        background: rgba(255, 255, 255, 0.336);/*фон при раскрытом контенте*/
+        border-radius: 5px;/*скругление краев контента*/
         transition: 0.7s;/*задержка*/
-        overflow: hidden;
+      }
+      
+      .details[open]::after {
+        transform: rotate(45deg);
+      }
+      
+      .details[open] {
+        padding-bottom: 100px;
+      }
+      
+      .details[open] .details__title {
+        margin-bottom: 32px;
+      }
+      
+      .details-title {
+        background: rgba(118, 114, 114, 0.133);
+        border-radius: 5px;
+        padding: 12px 24px;
+        font-size: 20px;
+        cursor: pointer;
+        list-style: none;
+        font-weight: 500;
+        transition: .3s;
+        border: 3px solid rgba(234, 230, 230, 0.261);
+      }
+      
+      .details-title::-webkit-details-marker {
+        display: none;
+      }
+      
+      .details__content {
+        padding: 0 32px;
+        font-size: 18px;
+        margin-bottom: -60px;
+      }
+      
+      .details__content p:last-child {
+        margin-bottom: 0;
+      }
+      .details__content p:first-child {
+        margin-top: 0;
       }
 
-
-      
       .details[open] {
         padding-bottom: 20px;/*рамка*/
       }
