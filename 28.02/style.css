@@ -1,0 +1,96 @@
+.header{
+    max-width: 1200px;    
+    min-height: 50vh;
+    border: 1px solid #000
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 33.333vh;
+    height: 30vh;
+    border: 1px solid #000;
+    overflow: scroll;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+body{
+    width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    /*Стили для планшета*/
+    h1 {
+        font-size: 24px;
+    }
+    .item {
+        width: 50vw;
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*Стили для планшета*/
+    h1 {
+        font-size: 18px;
+    }
+    .item {
+        width: 50vw;
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 360%);
+        padding-right: calc(50% - 360%);
+    }
+    .about__content {
+        justify-content: center;
+        gap: 32px;
+    }
+    .heading {
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+    .header {
+        justify-content: center;
+    }
+}
