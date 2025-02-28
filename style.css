@@ -24,6 +24,8 @@ body {
         border-radius: 16px;/*закругление крраев рамки*/
         backdrop-filter: blur(10px);/*степень размытия*/
         border: 3px solid rgba(234, 230, 230, 0.261);/*рамка*/
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .details {/*при раскрытом списке*/
