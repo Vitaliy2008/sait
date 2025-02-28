@@ -17,7 +17,7 @@ body {
     .content-box{ /*полупрозрачный блок*/
         padding: 50px; /*размер до края блока*/
         color: #ffffff00;/*цвет треугольников*/
-        font-size: 36px;/*размер всег блока*/
+        font-size: 25px;/*размер всег блока*/
         text-transform: uppercase;/*все буквы заглавные*/
         font-family: Verdana, Tahoma, sans-serif;/*шрифт*/
         background: rgba(118, 114, 114, 0.133);/*цвет и прозрасность рамки*/
