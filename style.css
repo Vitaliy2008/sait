@@ -8,7 +8,7 @@ body {
         justify-content: center;/*всегда по центру (по вертикали)*/
         align-items: center; /*высота блока*/
         height: 100vh;/*высота картинки*/
-        background-image: url(fon3.jpg); /*определение картинки*/
+        background-image: url(fon1.jpg); /*определение картинки*/
         background-repeat: no-repeat; /*повторение картинки*/
         background-size: cover; /*будет каартинка увеличиваться прри масштабировании сайта, или нет*/
         flex-direction: column;
