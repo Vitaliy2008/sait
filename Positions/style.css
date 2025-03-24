@@ -1,0 +1,174 @@
+body {
+    background-image: url(fon2.jpg); /* Фоновое изображение */
+    background-size: cover; /* Масштабировать изображение по размеру экрана */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрирование по горизонтали */
+    margin: 0; /* Убрать отступы */
+}
+
+.bear
+{
+position: absolute;
+left: 50;
+TOP: 50;
+WIDTH: 200px;
+HEIGHT: 200px;
+}
+
+.image
+{
+POSITION: absolute;
+LEFT: 25; 
+TOP: 20; 
+WIDTH: 150px; 
+HEIGHT: 150px;
+Z-INDEX: 1;
+}
+.text
+{
+POSITION: absolute;
+LEFT: 50; 
+TOP:100;
+Z-INDEX: 1; 
+FONT-SIZE:30px; 
+COLOR: red;
+}
+
+.delphin
+{
+POSITION: absolute;
+LEFT: 20;
+TOP: 20;
+WIDTH: 175px;
+HEIGHT: 175px;
+Z-INDEX: 0;
+}
+
+.olen
+{POSITION: absolute;
+     Z-INDEX: 0;
+    width: 100px;
+height: 100px;}
+.medved
+{POSITION: absolute;
+     Z-INDEX: 1;
+    height: 75px;
+width: 75px;}
+.kaban
+{POSITION: absolute;
+     Z-INDEX: 2;
+    width: 50px;
+height: 50px;}
+
+.volk {
+    position: absolute;
+z-index: 0;
+width: 350px;
+height: 200px;
+}
+
+.wibear{
+    position: absolute;
+z-index: 1;
+height: 155px;
+width: 190px;
+margin-top: 20px;
+margin-left: 130px;
+}
+
+.t {
+    position: absolute;
+z-index: 2;
+color: red;
+font-size: 40px;
+left: 780px;
+}
+
+.img{
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    height: 200px;
+}
+
+.t1 {
+    font-size: 70px;
+position: absolute;
+z-index: 1;
+color: red;
+left: 750px;
+top: 570px;
+}
+.t2{
+    font-size: 70px;
+position: absolute;
+z-index: 2;
+color: blue;
+top: 590px;
+left: 760px;
+}
+.t3{
+    font-size: 70px;
+position: absolute;
+z-index: 3;
+color: green;
+top: 610px;
+left: 770px;
+}
+
+.lec{
+position: absolute;
+z-index: 1;
+width: 250px;
+height: 200px;
+margin-top: 50px;
+margin-left: 35px;
+border: 10px solid yellow; 
+}
+.gold{
+position: absolute;
+z-index: 0;
+width: 400px;
+height: 300px;
+}
+.t4{
+    position: absolute;
+z-index: 2;
+font-size: 40px;
+color: aqua;
+top: 860px;
+left: 740px;
+}
+.t5{
+    position: absolute;
+z-index: 2;
+font-size: 40px;
+color: aqua;
+left: 930px;
+top: 970px;
+}
+
+.im3 {
+position: absolute;
+z-index: 0;
+width: 400px;
+height: 300px;
+}
+.im4{
+    position: absolute;
+    z-index: 1;
+width: 350px;
+height: 250px;
+margin-left: 20px;
+margin-top: 30px;
+border: 5px dashed rgb(128, 18, 18);
+}
+.t6{
+    position: absolute;
+    z-index: 1;
+color: rgb(128, 18, 18);
+font-size: 30px;
+top: 1175px;
+left: 750px;
+}
